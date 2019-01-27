@@ -6,13 +6,13 @@ class Dog
   def initialize(name)
     
     @name = name
-    @@all << name
+    @@all << self.name
     
   end
   
   def self.all
     
-    @@all.each {|name| puts "#{name} " }
+    @@all.each {|name| puts "#{name}" }
 
   end
   
